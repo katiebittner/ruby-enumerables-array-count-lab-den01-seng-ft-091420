@@ -6,6 +6,6 @@ end
 
 def count_empty_strings(array)
   array.count do |element|
-    element.empty?
+    if(element.instance_of? String) {element.empty?}
   end
 end
